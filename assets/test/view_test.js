@@ -1,4 +1,4 @@
-import {Socket} from "phoenix"
+import {Socket} from "phoenix_live_view"
 import LiveSocket from "phoenix_live_view/live_socket"
 import DOM from "phoenix_live_view/dom"
 import View from "phoenix_live_view/view"
