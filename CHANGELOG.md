@@ -1,5 +1,25 @@
 # Changelog
 
+## 0.20.2
+
+### Bug fixes
+  * Fix javascript error when submitting a form that has in progress uploads
+  * Fix JS command `:target` failing to work when used as phx-submit or phx-change with a selector-based target
+
+### Enhancements
+  * Speed up DOM patching performance 3-30x 🔥
+
+## 0.20.1 (2023-10-09)
+
+### Bug fixes
+  * Fix error with live uploads `auto_upload: true` when a file fails to preflight
+  * Fix error with live uploads where an early exit can cause a map key error
+  * Fix match error on live navigation when reconnecting from client
+
+### Enhancements
+  * Support new `meta()` method on File/Blob sublcasses on JavaScript client to allow the client to pass arbitrary metadata when using `upload/uploadTo` from hook. The `%UploadEntry{}`'s new `client_meta` field is populated from this information.
+  * Improve void tagging and error messages
+
 ## 0.20.0 (2023-09-22)
 
 ### Deprecations
